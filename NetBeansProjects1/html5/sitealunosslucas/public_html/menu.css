@@ -1,0 +1,90 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+}
+
+header {
+	float: left;
+	width: 100%;
+	height: 100px;
+	background: #ccc;
+	text-align: center;
+}
+
+nav {
+	float: left;
+	width: 100%;
+	height: 50px;	
+	background: #FFA07A;
+}
+
+nav ul {
+	float: left;
+	width: 100%;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+nav ul li {
+	float: left;
+	width: 25%;
+}
+
+nav ul li a {
+	float: left;
+	display: block;
+	width: 100%;
+	text-align: center;
+	line-height: 50px;
+	color: #000;
+	text-decoration: none;
+	font-weight: bold;
+    text-shadow: 1px 1px 0px #FFF;	
+}
+
+section {
+	float: left;
+	width: 80%;
+	height: 300px;
+	background: #FFF68F;
+	text-align: center;
+	padding: 10px 0px;
+}
+
+aside {
+	float: left;
+	width: 20%;
+	height: 300px;
+	background: #A4D3EE;
+	text-align: center;
+	padding: 10px 0px;	
+}
+
+footer {
+	float: left;
+	width: 100%;
+	padding: 20px 0px;
+	background: #ccc;
+	text-align: center;
+	font-size: 12px;
+}
+
+h1 {
+    text-shadow: 2px 2px 1px #FFF;
+}
+
+nav ul li a:hover {
+	background: #B22222;
+	color: #FFF;
+    text-shadow: 1px 1px 0px #000;
+    animation: teste 5s;	
+}
+
+@keyframes teste
+{
+	from {text-align: left;}
+	to {text-align: center;}
+}
+*/

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aula 11 - exercicio-2 </title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    </head>
+    <body>
+        <h1>Aula 11 - exercicio-2</h1>
+        <div>
+            <form method="get"action="exercicio02.php">
+                valor1: <input type="number"name="v1"max="100" min="0"/>
+                <input type="submit"value="enviar"class="foco1"/>
+                
+            </form>
+            
+            
+        <?php
+        $c=10;
+        while($c>=1){
+         echo $c."<br/>";
+         $c--;//$c=$c-2;
+    }
+    ?>
+        </div>
+    </body>
+</html>

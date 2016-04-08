@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Professor João Moreira</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/specs.css"/>
+</head>
+<script src="javascript/funcoes.js"></script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolucao do Google esta chegando</h2>
+	</hgroup>
+	
+	<img id="icone"src="imagens/especificacoes.png"/>
+		<nav id="menu">	
+	<h1>Menu Principal</h1>
+			<ul type="disc"> 
+<li onmouseover="mudaFoto('imagens/home.png')"onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="index.html">Home</a></li>
+
+<li onmouseover="mudaFoto('imagens/especificacoes.png')"onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="specs.html">Especificações</a></li>
+
+<li onmouseover="mudaFoto('imagens/foto.png')"onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fotos.html">Fotos</a></li>
+
+<li onmouseover="mudaFoto('imagens/multimedia.png')"onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="multimidia.html">Multimidias</a></li>
+
+<li onmouseover="mudaFoto('imagens/contato.png')"onmouseout="mudaFoto('imagens/especificacoes.png')"><a href="fconosco.html">Fale conosco</a></li>
+
+		</ul>
+	</nav>
+</header>
+
+<section id="corpo-full">
+
+<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+		<hgroup>
+			<h3>Glass > Especificações</h3>
+			<h1>Raio-X no Google Glass<h1>
+			<h2>por: João Moreira</h2>
+			<h3 class="direita"><span>atualizado em 28/out/2015</span></h3>
+		</hgroup>
+	</header>
+
+
+<p>Clique em qualquer área destacada da imagem para ter mais informações</p> 
+<section id="conteudo">
+<img src="imagens/glass-esquema-marcado.jpg"usemap="meumapa"alt="foto completa do google glass onde podemos escolher janelas de informacoes"/>
+<map name="meumapa">
+<area shap="rect"coords="183,205,269,261,"href="google-glass.html#tela"target="janela"/>
+<area shap="circle"coords="157,243,13,"href="google-glass.html#camera"target="janela"/>
+<area shap="circle"coords="73,52,13,"href="google-glass.html#gadgets"target="janela"/>
+<area shap="poly"coords="29,153,83,216,84,250,27,166,"href="google-glass.html#sensores"target="janela"/>
+
+
+</map>
+<iframe src="google-glass.html"name="janela" id="frame-spec"></iframe>
+</section>
+	</article>
+</section>
+
+
+
+<footer id="rodape">
+<p>Copyright &copy; 2015 - by Joao Moreira<br/>
+<a href="https://www.facebook.com/professorjoaomoreira"target="_blank">Facebook</a>|<a href="https://twitter.com/profjoaomoreira"target="_blank">Twitter</a></p>
+
+</footer>
+
+
+</div>
+</body>
+</html>

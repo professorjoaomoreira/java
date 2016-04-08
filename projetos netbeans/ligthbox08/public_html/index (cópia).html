@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+   
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt-br">
+    <head>
+             
+        
+        <title>Janela Modal Feito no Braco</title>
+        <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8" />
+        
+        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function(){
+        $('.lightbox').click(function() {
+                
+        $('.background, .box').animate({'opacity':'.60'}, 500,'linear');
+        $('.box').animate({'opacity':'1.00'},500, 'linear');
+        $('.background,.box').css('display','block');
+            });
+            
+        $('.close').click(function(){
+           $('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+              $('.background, .box').css ('display','none');
+             });
+          });
+   
+        $('.background').click(function(){
+           $('.background, .box').animate({'opacity':'0'}, 500, 'linear', function(){
+              $('.background, .box').css ('display','none');
+              });
+           });
+        });
+                   
+    </script>
+        
+        
+         
+        
+        <style type="text/css">
+            .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000000;
+            opacity: .0;
+            -moz-opacity:.0;
+            filter: alpha (opacity=0);
+            z-index: 100;
+            display: none;
+            
+            }
+            .box {
+                position: absolute;
+                top: 25%;
+                left: 5%;
+                width: 700px;
+                height:350px;
+                background-color: #cecece;
+                z-index: 101;
+                padding: 34px;
+                border-radius: 4px;
+                -moz-border-radius: 4px;
+                -webkit-border-radius: 4px;
+                box-shadow: 2px 2px 2px #000;
+                -moz-box-shadow: 2px 2px 2px #333333;
+                -webkit-box-shadow: 2px 2px 2px #333333;
+                display: none;
+       
+            }
+            
+            .close {
+                float: right;
+                margin-right: 10px;
+                cursor: pointer;
+                
+            }
+            
+        </style>
+        
+    </head>
+    <body>
+        
+        <a href="#" class="lightbox">Clique aqui para ver o LightBoximg"></a>
+        <div class="background"></div>
+        <div class="box"><div class="close"> X &#8249;&#8249;Fechar&#8250;&#8250;</div><img src="baner.png"></div>
+        
+    </body>
+</html>

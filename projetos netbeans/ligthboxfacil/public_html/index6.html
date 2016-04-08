@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inicia o moodle da QI, com o lightBox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        
+// JavaScript Document
+ var $q = jQuery.noConflict();
+$q(document).ready(function()
+{
+$q("#lightbox, #lightboxContent").click(function(){
+$q("#lightbox, #lightboxContent").hide();
+})});
+</script>
+<style>
+#lightbox {
+    background-color: #000;
+    float: left;
+    height: 100%;
+    opacity: 0.9;
+    -moz-opacity: 0.9;
+    filter: alpha(opacity=9);
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+    cursor:pointer;
+}   
+ 
+#lightboxContent {
+    margin: 0 auto;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 150px;
+    width: 100%;
+    z-index: 2147483647;
+    
+}
+</style>  
+
+  </head> 
+  
+  
+  
+    <body>
+		
+<div id="lightboxContent">
+<div id="lightbox"><img src="baner.png"></div>
+<div <a href="#"id="fechar">X</a>
+<a href="#"id="droid">Baixe na Google Play</a>
+<a href="#"id="ios">Baixe na app Store</a></div></div>
+
+
+    </body>
+
+</html>

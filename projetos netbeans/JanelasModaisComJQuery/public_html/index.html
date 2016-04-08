@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Janelas Modal com JQuery</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="modal.css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script> 
+<script src="modal.js" type="text/javascript"></script>
+
+
+
+<div>Janelas Modal com JQuery</div>
+        <!-- Div que irá escurecer a tela de fundo -->
+<div id="mask"></div>
+ 
+<!-- Div oculta que será chamada pela function openModalForm -->
+<div class="esqueci-senha">
+
+ <div class="form">
+
+  <h2>Esqueci Senha</h2>
+
+   <form action="esqueci.php" method="POST" id="form-esqueci">
+
+    <p><label>E-mail:</label><input class="field" type="text" size="30" id="email" name="email" value=""></p>
+    <p><label></label><input name="submit" class="button" type="submit" value="Enviar"></p>
+
+   </form> 
+
+ </div>  
+ 
+</div>
+<div id="container">
+ <div id="conteudo">
+  <p class="forgot">
+    <a href="javascript:openModalForm('.esqueci-senha','cadastro_js','valida.esqueci.senha.js');">Clique aqui para visualizar o efeito modal.</a> 
+  </p>
+ </div>
+</div>
+
+    </head>
+    <body>
+        
+    </body>
+</html>

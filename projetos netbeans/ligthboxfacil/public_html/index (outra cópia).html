@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+   
+    <html xmlns="http://www.w3.org/1999/xhtml" lang="pt" xml:lang="pt-br">
+    <head>
+        <title>Janela Modal Feito no Braco</title>
+        <meta http-equiv="Content-Type" content="text/xml; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+   
+<script type="text/javascript">
+        
+ var $q = jQuery.noConflict();
+$q(document).ready(function()
+{
+$q("#lightbox, #lightboxContent, #droid, #ios, #fechar").click(function(){
+$q("#lightbox, #lightboxContent, #droid, #ios, #fechar").hide();
+})});      
+</script>
+
+    <style>
+    
+#lightbox {
+    background-color: #000;
+    float: left;
+    height: 100%;
+    opacity: 0.8;
+    -moz-opacity: 0.70;
+    filter: alpha(opacity=90);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    
+}   
+ 
+#lightboxContent {
+    margin: 0 auto;
+    opacity: 1;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    width: 100%;
+    z-index: 101;
+    
+}
+
+#ios {
+font-size:9pt;
+position: absolute;
+top: 220px;
+left: 910px;
+margin: 1em auto;
+display: block;
+width: 65px;
+background: #ccc;
+text-align: center;
+padding: 10px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+background: -moz-linear-gradient(#fff, #ddd);
+background: -webkit-gradient(linear, right top, right bottom,
+from(rgb(255,255,255)), to(rgb(230,230,230)));
+text-shadow: 5px 15px 55px 2px #cecece;
+border: 2px solid rgba(0,0,0,0.1);
+-webkit-box-shadow: 6px 1px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+box-shadow: 0 3px 1px rgba(0,0,0,0.3); 
+}
+a#ios:hover,
+a#ios:focus {
+padding: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 #000;
+}
+
+#droid {
+font-size:9pt;
+position: absolute;
+top: 220px;
+left: 810px;
+margin: 1em auto;
+display: block;
+width: 65px;
+background: #ccc;
+text-align: center;
+padding: 10px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+background: -moz-linear-gradient(#fff, #ddd);
+background: -webkit-gradient(linear, right top, right bottom,
+from(rgb(255,255,255)), to(rgb(230,230,230)));
+text-shadow: 5px 15px 55px 2px #cecece;
+border: 2px solid rgba(0,0,0,0.1);
+-webkit-box-shadow: 6px 1px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+box-shadow: 0 3px 1px rgba(0,0,0,0.3); 
+}
+a#droid:hover,
+a#droid:focus {
+padding: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 #000;
+}
+
+#fechar {
+font-size:9pt;
+position: absolute;
+top: -40px;
+left: 990px;
+margin: 1em auto;
+display: block;
+width: 20px;
+height: 20px;
+background: #ccc;
+text-align: center;
+padding: 10px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+background: -moz-linear-gradient(#fff, #ddd);
+background: -webkit-gradient(linear, right top, right bottom,
+from(rgb(255,255,255)), to(rgb(230,230,230)));
+text-shadow: 5px 15px 55px 2px #cecece;
+border: 2px solid rgba(0,0,0,0.1);
+-webkit-box-shadow: 6px 1px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+box-shadow: 0 3px 1px rgba(0,0,0,0.3); 
+}
+a#fechar:hover,
+a#fechar:focus {
+padding: 7px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 #000;
+}
+
+
+
+            
+</style>
+    
+    </head>
+        
+        
+<body>
+         
+
+    
+    <div img src="baner.png"> <id="lightboxContent"> </div><div><a href="#"id="ios" id="lightboxContent"><a href="#"id="droid" id="lightboxContent"><a href="#"id="fechar">X</a></div></div>
+    
+
+
+</body>
+        
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Inicia o moodle da QI, com o lightBox</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+    
+    <script type="text/javascript">
+        
+// JavaScript Document
+ var $q = jQuery.noConflict();
+$q(document).ready(function()
+{
+$q("#lightbox, #lightboxContent, #fechar, #droid, #ios").click(function(){
+$q("#lightbox, #lightboxContent, #fechar, #droid, #ios").hide();
+})});
+
+</script>
+<style>
+    
+#lightbox {
+    background-color: #000;
+    float: left;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=5);
+    position: absolute;
+    top: 145px;
+    left: 330px;
+    width: 50px;
+    height: 30px;
+    z-index: 101;
+    padding: -45px;    
+}
+
+#droid {
+font-size:12pt;
+position: absolute;
+top: 465px;
+left: 410px;
+display: block;
+width: 180px;
+height: 20px;
+background: #cecece;
+text-align: center;
+padding: 20px;
+-moz-border-radius: 17px;
+border-radius: 17px;
+text-shadow: 5px 15px 55px 2px #cecece;
+border: 2px solid rgba(0,0,0,0.1);
+-webkit-box-shadow: 6px 1px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+box-shadow: 0 3px 1px rgba(0,0,0,0.3); 
+}
+
+a#droid:hover,
+a#droid:focus {
+padding: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 green;
+}
+
+#ios {
+font-size:12pt;
+position: absolute;
+top: 465px;
+left: 710px;
+display: block;
+width: 180px;
+height: 20px;
+background: #cecece;
+text-align: center;
+padding: 20px;
+-moz-border-radius: 17px;
+border-radius: 17px;
+text-shadow: 5px 15px 55px 2px #cecece;
+border: 2px solid rgba(0,0,0,0.1);
+-webkit-box-shadow: 6px 1px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3);
+box-shadow: 0 3px 1px rgba(0,0,0,0.3); 
+}
+
+a#ios:hover,
+a#ios:focus {
+padding: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 green;
+}
+
+#fechar {
+font-size:20pt;
+color: red;
+position: absolute;
+text-align: center;
+top: 125px;
+left: 1000px;
+display: block;
+width: 35px;
+height: 30px;
+padding: 7px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #ccc);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 #000;
+
+
+}
+a#fechar:hover,
+a#fechar:focus {
+padding: 10px;
+-moz-border-radius: 35px;
+border-radius: 35px;
+-webkit-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+-moz-box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+box-shadow: 0 3px 20px rgba(0,0,0,0.9);
+background: -moz-linear-gradient(#fff, #606060);
+background: -webkit-gradient(linear, right bottom, right top, 
+color-stop(1, rgb(255,255,255)), color-stop(0.57, rgb(150,150,150)));
+text-shadow: 0 1px 0 green;
+}
+
+ 
+
+</style>  
+
+  </head> 
+  
+  <div> <a href="#"title="Clique aqui para chefar"id="fechar">X</a></div>  
+  
+  
+    
+    <body>
+		
+<div id="lightboxContent">
+<div id="lightbox"><img src="baner.png"></div>
+
+
+    </body>
+    
+<div><a href="https://play.google.com/store/apps/details?id=com.moodle.moodlemobile&hl=pt-BR"title="Clique aqui para instalar o moodle no ANDROID"id="droid">Baixe na Google Play</a></div>
+<div><a href="https://itunes.apple.com/app/moodle-mobile/id633359593?mt=8"title="Clique aqui para instalar o moodle no IOS"id="ios""id="ios">Baixe na App Store</a></div>  
+
+</html>

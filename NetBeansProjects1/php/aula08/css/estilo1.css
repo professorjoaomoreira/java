@@ -1,0 +1,280 @@
+@charset "UTF-8";
+/*aqui podemos colar o link do google fonts e assim importa-las diretamente da google*/
+@import url(https://fonts.googleapis.com/css?family=Bubblegum+Sans);
+
+/*aqui vou definir uma fonte importada do computador para o sit*/
+@font-face{
+	font-family:'Fontelogo';
+	src: url("../fontes/chintzys.ttf");
+}
+	body {
+		font-family:Arial, sans-serif;
+		background-color: #blue;	
+		color: rgba(0,0,3,5);
+		background:cecece;
+		/* background-image: url("imagens/aco5.jpg");
+		background-color:rgb(35,137,195);*/
+		}
+		
+		/*nesta area definimos a div interface*/
+	div#interface{
+		width: 350px;
+		background-color:#cecece;
+		margin: 5px 5px 0px 0px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+		padding:10px 10px 10px 10px;
+		}
+	
+
+/*formatacao do cabecalho*/
+	
+	header#cabecalho {
+		border-bottom: 1px #606060 solid;
+		height: 135px;
+		background:url("../imagens/google_glass_logo5.png")no-repeat 0px 100px;
+	}	
+	header#cabecalho img#icone{
+		position:absolute;
+		left:930px;
+		top:90px;
+	}
+	header#cabecalho h1{
+		
+		/*aqui vou colar o codigo importado do google fontes para integrar a fonte ao site*/
+		
+		font-family: 'Bubblegum Sans', cursive;
+		font-size:35pt;
+		color:#606060;
+		text-shadow:1px 1px 1px rgba(0,0,0,.6);	
+		padding:0px;
+		margin-bottom:0px;
+	}
+	header#cabecalho h2{
+		font-family:Arial, sans-serif;
+		font-size:11pt;
+		color:#888888;
+		padding:0px;
+		margin-top:0px;
+		
+	}	
+	a{
+		color:#blue;
+		text-decoration:none;
+		}
+	a:hover{
+		text-decoration:underline;
+		color:blue;
+		
+		}
+	
+	h1 {
+		font-family: Arial;
+		font-size: 30pt;
+		color: blue;
+		text-shadow: 2px 2px 2px black;
+		}
+	p{
+		text-align: justify;
+		text-indent: 50px;
+		}
+
+	/* Formatacao do menu*/
+	nav#menu {
+		display:block;
+	}
+	nav#menu ul  {
+		list-style:nome;
+		text-transform:uppercase;
+		font-size: 10pt;
+		position:absolute;
+		top:23px;
+		left:500px;
+		font-weight:bolder;
+		}
+		
+	nav#menu li  {
+		display:inline-block;
+		background-color: #cecece;
+		padding:10px;
+		margin:2px;
+		transition:background-color 2s;
+		}
+		
+	nav#menu li:hover{
+		background-color:#000000;
+		}
+				
+	nav#menu h1  {
+		display:none; 
+		}
+	nav#menu a  {
+		color:#ffffff; 
+		text-decoration:none;
+		font-weight:bolder;
+		}
+	nav#menu a:hover {
+		color: yellow;
+		text-decoration: underline;
+	}
+	
+	/* aqui vou definir as configuracoes do corpo do site*/
+	section#corpo {
+		display: block;
+		width: 500px;
+		float: left;
+		border-right:1px solid #606060;
+		padding-right:15px
+	}
+	article#noticia-principal h2 {
+		font-size:13pt;
+		color:#606060;
+		background-color:#dddddd;
+		padding:5px 0px 5px 10px;
+		margin:10px 0px 10px 0px;
+		}
+		
+	header#cabecalho-artigo h1 {
+		font-family:'Bubblegum Sans', cursive;
+		font-size:25pt;
+		color: #dddddd;	
+		margin-bottom:0px;
+		margin-top:0px;
+	}
+		
+	header#cabecalho-artigo h2 {
+		font-size:13pt;
+		color:cecece;
+		background-color:#ffffff;
+		margin:0px;
+	}	
+	header#cabecalho-artigo h3 {
+		font-size:12pt;
+		color:#606060;	
+	}
+	
+	header#cabecalho-artigo h3 span{
+		text-align: center;/*nao entendi mas nao funcionou text-align entao tive que usar uma class*/
+		text-align:right;/*nao entendi mas nao funcionou text-align entao tive que usar uma class*/
+		font-size:8pt;
+		color:#cecece;
+	}
+	.direita {
+		text-align:right;
+		font-size:8pt;
+		color:#cecece;
+	}
+	
+
+	table#tabelaespec{
+		border: 1px solid #606060;
+		border-spacing:0px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	table#tabelaespec td{
+		border: 1px solid #606060;
+		padding:15px;
+		text-align:center;
+		vertical-align:middle;
+		}
+		
+	table#tabelaespec td.ce{
+		color:#ffffff;
+		background-color:#606060;
+		vertical-align:top;
+		font-weight:bold;
+		text-align:right;
+		
+		}
+	table#tabelaespec td.cd{
+		background-color:#cecece;
+		text-align:left;
+	}
+	
+	table#tabelaespec caption{
+		color:#888888;
+		font-size:13pt;
+		font-weight:bolder;
+	}
+	
+	table#tabelaespec caption span{
+		display:block;
+		color:#000000;
+		float:right;
+		font-size:8pt;
+		font-weight:bolder;
+		margin-top:10px;
+		}
+		
+	aside#lateral {
+		margin:20px auto 10px auto;
+		box-shadow: 0px 0px 10px rgba(0,0,0,.4);
+		background-color:#dddddd;
+		display: block;
+		width: 300px;
+		float: right;
+		padding:10px;
+		}
+	aside#lateral h1{
+		font-family:'Bubblegum Sans', cursive;
+		font-size:20pt;
+		color:#606060;
+		padding: 10px;
+		margin-bottom:0px;
+		margin-top:0px;
+		}
+		
+	aside#lateral h2{
+		background-color:#606060;
+		font-family:Arial, sans-serif;
+		font-size:12pt;
+		color:white;
+		padding: 10px;
+		margin-bottom:0px;
+		margin-top:0px;
+		}
+	footer#rodape{
+		clear:both;
+		border-top:1px solid #606060;
+	}
+		footer#rodape p{
+			text-align: center;
+		}
+	
+	/* site para acesso para fazer atualizacao retroativa em navegadores mais antigos http://prefixr.com/*/
+	
+
+		
+	/* Formatação de imagens com legendas*/
+	
+	figure.foto-legenda {
+	
+	position: relative;
+	border: 8px solid white;
+	box-shadow: 1px 1px 4px black;
+	}
+	
+	figure.foto-legenda img {
+	width: 100%;
+	height: 100%;
+	}
+	
+	figure.foto-legenda  figcaption {
+	opacity:0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,.4);
+	color:white;
+	width:100%;
+	height:100%;
+	padding:10px;
+	box-sizing:border-box;
+	transition: opacity 1s;
+	}
+	figure.foto-legenda  h5 {
+		display:none;
+		}
+	
+	figure.foto-legenda:hover figcaption{
+	opacity:1;
+	}

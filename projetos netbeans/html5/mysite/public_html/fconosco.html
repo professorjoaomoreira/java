@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8"/>
+	<title>Professor João Moreira</title>
+	<link rel="stylesheet" href="css/estilo.css"/>
+	<link rel="stylesheet" href="css/fconosco.css"/>
+</head>
+<script src="javascript/funcoes.js"></script>
+<script>
+function calc_total(){
+	var qtd = parseInt(document.getElementById('cQtd').value);
+	tot = qtd * 1500;
+	document.getElementById('cTot').value = tot;
+
+}
+</script>
+<body>
+<div id="interface">
+
+	<header id="cabecalho">
+	
+	<hgroup>
+	<h1>Google Glass</h1>
+	<h2>A revolucao do Google esta chegando</h2>
+	</hgroup>
+	<img id="icone"src="imagens/contato.png"/>
+		<nav id="menu">	
+	<h1>Menu Principal</h1>
+			<ul type="disc"> 
+<li onmouseover="mudaFoto('imagens/home.png')"onmouseout="mudaFoto('imagens/contato.png')"><a href="index.html">Home</a></li>
+
+<li onmouseover="mudaFoto('imagens/especificacoes.png')"onmouseout="mudaFoto('imagens/contato.png')"><a href="specs.html">Especificações</a></li>
+
+<li onmouseover="mudaFoto('imagens/foto.png')"onmouseout="mudaFoto('imagens/contato.png')"><a href="fotos.html">Fotos</a></li>
+
+<li onmouseover="mudaFoto('imagens/multimedia.png')"onmouseout="mudaFoto('imagens/contato.png')"><a href="multimidia.html">Multimidias</a></li>
+
+<li onmouseover="mudaFoto('imagens/contato.png')"onmouseout="mudaFoto('imagens/contato.png')"><a href="fconosco.html">Fale conosco</a></li>
+
+		</ul>
+	</nav>
+</header>
+
+<section id="corpo-full">
+
+<article id="noticia-principal">
+	<header id="cabecalho-artigo">
+		<hgroup>
+			<h3>Glass > Contato</h3>
+			<h1>Formulário de Contato<h1>
+			<h2>por: João Moreira</h2>
+			<h3 class="direita"><span>atualizado em 28/out/2015</span></h3>
+		</hgroup>
+	</header>
+	
+<form method="post" id="fcontato" oninput="calc_total();">
+<fieldset id="usuario"><legend>Identificação do usuário</legend>
+
+<p><label for="cNome">Nome: <input type="text"name="tNome" id="cNome" size="20" maxlength="30"placeholder="Nome Completo"/></label></p>
+
+
+<p><label for="cSenha">Senha: <input type="password"name="tSenha"id="cSenha"size="10" maxlength="8"placeholder="digite 8 digitos"/></label></p>
+
+<p><label for="cEmail">E-mail: <input type="email"name="tEmail"id="cEmail"size="50"maxlength="55"placeholder="joao@exemplo.com.br"></label></p>
+
+<fieldset id="sexo"><legend>Sexo</legend>
+	<input type="radio"name="tSexo"id="cMasc"checked/><label for="cMasc">Masculino</label><br/>
+	<input type="radio"name="tSexo"id="cFem"/><label for="cFem">Feminino</label>
+	</fieldset>
+	
+<p><label for="cDate">Data de Nascimento: <input type="date"name="tdate"id="cDate"size="10"maxlength="10"></label></p>
+</fieldset>
+
+<fieldset id="endereco"><legend>Endereço do usuário</legend>
+</p>
+<p><label for="cLog">Logradouro: <input type="text"name="tLog" id="cLog" size="30" maxlength="30"placeholder="Rua, Av. Trav."/></label></p>
+
+<p><label for="cNum">Numero: <input type="text"name="tNum" id="cNum" size="10" maxlength="10"placeholder="150, 0010..."/></label></p>
+
+<p>Estado: <select name="tEst" id="cEst">
+	<optgroup label="Região Sul">
+		<option value="RJ"> Rio de Janeiro</option>
+		<option value="SC">Santa Catarina</option>
+		<option value="RS"select>Rio Grande do Sul</option></select></p>
+	</optgroup>
+
+<p>Cidade: <select name="tCid" id="cCid">
+<option>Porto Alegre</option>
+<option>Gravatai</option>
+<option>Cachoeirinha do Sul</option></select></p>
+
+</fieldset>
+
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+<p><label for="cUrg">Grau de Urgência: <input type="range"name="tUrg" id="cUr" min="0"max="4"step="2"placeholder="0,1,2 ou 3"/></label></p>
+
+<p><label for="cMsg">Mensagem: </label>
+<textarea name="tMsg" id="cMsg"placeholder="deixe aqui sua mensagem"cols="45" rows="5"></textarea></p>
+</fieldset>
+<fieldset id="pedido"><legend>Quero um google glass</legend>
+<p><input type="checkbox" name="tPed" id="cPed"checked/>
+<label for="cPed">Gostaria de adquirir um google glass quando disponível</p>
+<label for="cCor">Cor: </label></p>
+<input type="color"name="tColor"id="cCor"value="#0000ff"/><p>
+<p><label for="cQtd">Quantidade: </label>
+<input type="number"name="tQtd" id="cQtd" min="0" max="5"/></p>
+<p><label for="cTot">Preco Total: R$</label>
+<input type="text" name="tTot" id="cTot" placeholder="O preco eh"readonly></p>
+
+</fieldset>
+<br/>
+<input type="submit"value="Enviar"/><br/><br/>
+<input type="image"src="imagens/enviar.png"height="30" width="100"/>
+
+<br/>
+</form>
+<br/>
+
+
+
+
+<footer id="rodape">
+<p>Copyright &copy; 2015 - by Joao Moreira<br/>
+<a href="https://www.facebook.com/professorjoaomoreira"target="_blank">Facebook</a>|<a href="https://twitter.com/profjoaomoreira"target="_blank">Twitter</a></p>
+
+</footer>
+
+
+</div>
+</body>
+</html>
